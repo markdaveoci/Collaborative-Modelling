@@ -3,6 +3,8 @@ public class MainLibrary {
 
         Library lib = new Library();
 
+        Author author = new Author("Charles Darwin");
+
         Book book = new Book();
         lib.addBooking(book);
 
