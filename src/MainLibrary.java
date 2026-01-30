@@ -3,11 +3,10 @@ public class MainLibrary {
 
         Library lib = new Library();
 
-        Book book = new Book("On the Origin of Species", "Charles Darwin");
+        Book book = new Book();
         lib.addBooking(book);
 
-        // Collect identities and print once (only println in the code).
-        String output = lib.getIdentity() + "\n" + book.getIdentity() + "\n" + book.getAuthor().getIdentity();
+        String output = lib.getIdentity();
 
         System.out.println(output);
     }
