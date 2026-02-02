@@ -5,10 +5,11 @@ public class MainLibrary {
 
         Author author = new Author("Charles Darwin");
 
-        Book book = new Book();
+        Book book = new Book("The Origin of Species", "Charles Darwin");
         lib.addBooking(book);
 
-        String output = lib.getIdentity();
+
+        String output = lib.getIdentity() + "\n" + book.getIdentity() +  "\n"  + book.getAuthor().getIdentity();
 
         System.out.println(output);
     }
