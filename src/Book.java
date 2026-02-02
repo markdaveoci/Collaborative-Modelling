@@ -1,2 +1,22 @@
 public class Book {
+     public String title;
+    public Author author;
+
+
+    public Book(String title, String authorName) {
+        this.title = title;
+        this.author = new Author(authorName);
+    }
+
+    public void open() {
+    }
+
+    public Author getAuthor() {
+        return author;
+    }
+
+    public String getIdentity() {
+        return "I am the Book Class. My title is " + title + ", written by " + author.name + ".";
+    }
 }
+
